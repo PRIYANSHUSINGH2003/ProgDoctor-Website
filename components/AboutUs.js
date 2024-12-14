@@ -4,7 +4,7 @@ import { FaHandshake, FaStethoscope, FaHeart } from "react-icons/fa";
 
 const AboutUs = () => {
     return (
-        <section id="#about" className="relative bg-gradient-to-r from-teal-400 via-blue-500 to-indigo-600 py-16 md:py-20 transition-all duration-500">
+        <section id="about" className="relative bg-gradient-to-r from-teal-400 via-blue-500 to-indigo-600 py-16 md:py-20 transition-all duration-500">
             <div className="container mx-auto px-4 max-w-6xl">
                 <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
                     {/* Text Content */}
