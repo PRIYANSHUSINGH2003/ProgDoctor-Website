@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* In your global CSS file (e.g., styles.css) */
+html {
+    scroll-behavior: smooth;
+}
+
+@keyframes scrollGallery {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-33.33%); /* Moves the container left to show 3 images */
+    }
+    100% {
+        transform: translateX(-66.66%); /* Moves the container left to show the next 3 images */
+    }
+}
+
+.animate-scroll {
+    animation: scrollGallery 30s linear infinite; /* Adjust the duration as needed */
+}
+
