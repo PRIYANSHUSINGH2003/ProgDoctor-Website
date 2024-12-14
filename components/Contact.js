@@ -9,7 +9,7 @@ const Contact = () => {
             {/* Background Image */}
             <div className="relative h-[300px] sm:h-[350px] md:h-[400px] w-full">
                 <Image
-                    src="/images/bg.webp"
+                    src="/images/bg.png"
                     alt="Background"
                     fill
                     className="object-cover brightness-[0.4] transition-all duration-500"
