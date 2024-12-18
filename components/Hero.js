@@ -5,20 +5,20 @@ import Link from 'next/link';
 
 export default function Hero() {
     return (
-        <section className="bg-gradient-to-r from-blue-900 via-indigo-800 to-purple-700 text-white py-20">
+        <section className="bg-blue-50 text-gray-800 py-20">
             <div className="container mx-auto px-6 md:px-12 lg:px-16 flex flex-col md:flex-row items-center">
                 {/* Text Section */}
                 <div className="md:w-1/2 space-y-6">
                     <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-                        Your Trusted <span className="text-accent">Tech Health</span> Partner
+                        Your Trusted <span className="text-blue-600">Tech Health</span> Partner
                     </h1>
-                    <p className="text-lg leading-relaxed text-gray-200">
+                    <p className="text-lg leading-relaxed text-gray-600">
                         Combining expertise in programming and healthcare, we bring advanced solutions for
                         managing your tech and health together. Consult now for a smarter and healthier tomorrow.
                     </p>
                     <div className="flex space-x-4">
                         <Link href="/appointment" legacyBehavior>
-                            <button className="bg-accent hover:bg-dark px-6 py-3 rounded-md shadow-lg transition-transform transform hover:scale-105">
+                            <button className="bg-blue-600 text-white hover:bg-blue-700 px-6 py-3 rounded-md shadow-lg transition-transform transform hover:scale-105">
                                 Get Started
                             </button>
                         </Link>

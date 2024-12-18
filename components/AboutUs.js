@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from 'next/link';
 import { FaHandshake, FaStethoscope, FaHeart } from "react-icons/fa";
 
 const AboutUs = () => {
@@ -16,9 +17,11 @@ const AboutUs = () => {
                             Shivansh Physiotherapy Clinic helps you get back on track with life. Our highly specialized team diagnoses and treats injuries, enhances mobility, and prevents further injury. We listen to your needs and offer treatments tailored to your condition.
                         </p>
                         <div className="flex justify-center gap-6 opacity-0 animate-fadeIn animate-delay-400">
-                            <button className="inline-flex items-center justify-center rounded-full bg-orange-600 px-8 py-4 text-base font-semibold text-white transition duration-200 hover:bg-orange-700 focus:bg-orange-700">
-                                Contact Us
-                            </button>
+                            <Link href="/contactus" legacyBehavior>
+                                <button className="inline-flex items-center justify-center rounded-full bg-orange-600 px-8 py-4 text-base font-semibold text-white transition duration-200 hover:bg-orange-700 focus:bg-orange-700">
+                                    Contact Us
+                                </button>
+                            </Link>
                             <button className="inline-flex items-center justify-center rounded-full bg-transparent border-2 border-white px-8 py-4 text-base font-semibold text-white transition duration-200 hover:bg-white hover:text-black">
                                 Learn More
                             </button>

@@ -49,10 +49,10 @@ export default function Navbar() {
                         </Link>
                     </li>
                     <li>
-                        <Link href="#about" legacyBehavior>
+                        <Link href="/procedures" legacyBehavior>
                             <a className="flex items-center space-x-2 hover:text-accent transition duration-200">
-                                <FaUser className="h-5 w-5" />
-                                <span>About</span>
+                                <FaClipboardList className="h-5 w-5" />
+                                <span>Procedures</span>
                             </a>
                         </Link>
                     </li>
@@ -94,6 +94,14 @@ export default function Navbar() {
                         </Link>
                     </li>
                     <li>
+                        <Link href="#about" legacyBehavior>
+                            <a className="flex items-center space-x-2 hover:text-accent transition duration-200">
+                                <FaUser className="h-5 w-5" />
+                                <span>About</span>
+                            </a>
+                        </Link>
+                    </li>
+                    <li>
                         <Link href="#services" legacyBehavior>
                             <a className="flex items-center space-x-2 hover:text-accent transition duration-200">
                                 <FaClipboardList className="h-5 w-5" />
@@ -102,10 +110,10 @@ export default function Navbar() {
                         </Link>
                     </li>
                     <li>
-                        <Link href="#about" legacyBehavior>
+                        <Link href="/procedures" legacyBehavior>
                             <a className="flex items-center space-x-2 hover:text-accent transition duration-200">
-                                <FaUser className="h-5 w-5" />
-                                <span>About</span>
+                                <FaClipboardList className="h-5 w-5" />
+                                <span>Procedures</span>
                             </a>
                         </Link>
                     </li>
