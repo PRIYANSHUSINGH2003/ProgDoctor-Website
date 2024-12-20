@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../procedures/Navbar";
-import Footer from "../../components/Footer";
+import Shortfooter from "./Shortfooter";
 import Image from "next/image";
 import { FaHandSparkles, FaRunning, FaBrain, FaBolt, FaDumbbell, FaWalking } from "react-icons/fa";
 
@@ -98,7 +98,7 @@ const Procedures = () => {
                     </div>
                 </div>
             </div>
-            <Footer />
+            <Shortfooter />
         </div>
     );
 };

@@ -4,6 +4,7 @@ import Image from "next/image";
 import Navbar from "../gallery/Navbar";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { BsPlayCircle } from "react-icons/bs";
+import Shortfooter from "./Shortfooter";
 
 const Gallery = () => {
     const [selectedImage, setSelectedImage] = useState(null);
@@ -164,6 +165,7 @@ const Gallery = () => {
                 )}
             </div>
         </div>
+        <Shortfooter />
         </>
     );
 };

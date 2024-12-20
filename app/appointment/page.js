@@ -2,8 +2,9 @@
 import React, { useState } from "react";
 import { FaCalendarAlt, FaPhoneAlt, FaEnvelope, FaClock } from "react-icons/fa";
 import Navbar from '../appointment/Navbar';
+import ShortFooter from "./ShortFooter";
 
-const Appointment = () => {
+function Appointment() {
     const [selectedTime, setSelectedTime] = useState(null);
     const timeSlots = [
         "09:00 AM", "10:00 AM", "11:00 AM",
@@ -57,8 +58,7 @@ const Appointment = () => {
                                         type="text"
                                         id="name"
                                         className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-400"
-                                        placeholder="Enter your full name"
-                                    />
+                                        placeholder="Enter your full name" />
                                 </div>
                                 <div className="mb-4">
                                     <label htmlFor="email" className="block text-sm font-semibold mb-2">
@@ -68,8 +68,7 @@ const Appointment = () => {
                                         type="email"
                                         id="email"
                                         className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-400"
-                                        placeholder="Enter your email"
-                                    />
+                                        placeholder="Enter your email" />
                                 </div>
                                 <div className="mb-4">
                                     <label htmlFor="date" className="block text-sm font-semibold mb-2">
@@ -78,8 +77,7 @@ const Appointment = () => {
                                     <input
                                         type="date"
                                         id="date"
-                                        className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-400"
-                                    />
+                                        className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-400" />
                                 </div>
 
                                 {/* Time Slots */}
@@ -93,11 +91,9 @@ const Appointment = () => {
                                                 key={index}
                                                 type="button"
                                                 onClick={() => setSelectedTime(time)}
-                                                className={`flex items-center justify-center px-4 py-2 rounded-lg border ${
-                                                    selectedTime === time
+                                                className={`flex items-center justify-center px-4 py-2 rounded-lg border ${selectedTime === time
                                                         ? "bg-teal-500 text-white border-teal-600"
-                                                        : "bg-gray-100 text-gray-800 hover:bg-teal-100 border-gray-300"
-                                                } transition duration-200`}
+                                                        : "bg-gray-100 text-gray-800 hover:bg-teal-100 border-gray-300"} transition duration-200`}
                                             >
                                                 <FaClock className="mr-2 text-lg" />
                                                 {time}
@@ -127,8 +123,9 @@ const Appointment = () => {
                     </div>
                 </div>
             </section>
+            <ShortFooter />
         </>
     );
-};
+}
 
 export default Appointment;

@@ -1,6 +1,7 @@
 import React from "react";
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaUserMd } from "react-icons/fa";
 import Navbar from '../contactus/Navbar';
+import Shortfooter from "./Shortfooter";
 
 const Contact = () => {
     return (
@@ -85,6 +86,7 @@ const Contact = () => {
                 </div>
             </div>
         </div>
+        <Shortfooter />
         </>
     );
 };
