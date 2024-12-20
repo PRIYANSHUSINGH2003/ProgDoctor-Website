@@ -10,7 +10,7 @@ const AboutUs = () => {
                 <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
                     {/* Text Content */}
                     <div className="w-full lg:w-1/2 text-center lg:text-left">
-                        <h2 className="mb-6 text-3xl md:text-4xl font-bold text-white opacity-0 animate-fadeIn">
+                        <h2 className="mb-6 text-3xl md:text-4xl font-extrabold text-white opacity-0 animate-fadeIn">
                             Why Shivansh Physiotherapy Centre?
                         </h2>
                         <p className="mb-8 text-lg leading-relaxed text-white opacity-0 animate-fadeIn animate-delay-200">
@@ -46,20 +46,38 @@ const AboutUs = () => {
                 <div className="mt-16 text-center">
                     <h3 className="text-2xl font-bold text-white mb-6">Our Key Values</h3>
                     <div className="flex justify-center gap-12">
+                        {/* Trust Icon */}
                         <div className="flex flex-col items-center text-white opacity-0 animate-fadeIn animate-delay-600">
-                            <FaHandshake className="text-4xl mb-3" />
+                            <Link href="/pages/trust" legacyBehavior>
+                                <a className="transition-transform duration-300 transform hover:scale-110">
+                                    <FaHandshake className="text-4xl mb-3" />
+                                </a>
+                            </Link>
                             <p className="text-lg">Trust</p>
                         </div>
+
+                        {/* Care Icon */}
                         <div className="flex flex-col items-center text-white opacity-0 animate-fadeIn animate-delay-800">
-                            <FaStethoscope className="text-4xl mb-3" />
+                            <Link href="/pages/care" legacyBehavior>
+                                <a className="transition-transform duration-300 transform hover:scale-110">
+                                    <FaStethoscope className="text-4xl mb-3" />
+                                </a>
+                            </Link>
                             <p className="text-lg">Care</p>
                         </div>
+
+                        {/* Healing Icon */}
                         <div className="flex flex-col items-center text-white opacity-0 animate-fadeIn animate-delay-1000">
-                            <FaHeart className="text-4xl mb-3" />
+                            <Link href="/pages/healing" legacyBehavior>
+                                <a className="transition-transform duration-300 transform hover:scale-110">
+                                    <FaHeart className="text-4xl mb-3" />
+                                </a>
+                            </Link>
                             <p className="text-lg">Healing</p>
                         </div>
                     </div>
                 </div>
+
             </div>
         </section>
     );
