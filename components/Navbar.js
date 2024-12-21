@@ -66,7 +66,7 @@ export default function Navbar() {
                     </li>
                     <li>
                         <Link href="/appointment" legacyBehavior>
-                            <a className="bg-accent text-white px-4 py-2 rounded-md hover:bg-dark transition duration-200">
+                            <a className="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 transition duration-200">
                                 Book Appointment
                             </a>
                         </Link>
@@ -127,7 +127,7 @@ export default function Navbar() {
                     </li>
                     <li>
                         <Link href="/appointment" legacyBehavior>
-                            <a className="bg-accent text-white px-4 py-2 rounded-md hover:bg-dark transition duration-200 block text-center">
+                            <a className="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 transition duration-200 block text-center">
                                 Book Appointment
                             </a>
                         </Link>
