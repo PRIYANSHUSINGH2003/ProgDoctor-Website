@@ -1,5 +1,4 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import Head from "next/head";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -20,10 +19,6 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-    <Head>
-        {/* Place the meta tag inside Head */}
-        <meta name="google-adsense-account" content="ca-pub-8553283570584154" />
-      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
